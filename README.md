@@ -28,13 +28,17 @@ The final fingerprint is calculated based on whether a pixel is lighter or darke
 5. Comparing images
 To detect duplicate or similar images, calculate the perceptual hashes for both images:
 
-`Original:  1100100101101001001111000001100000001000000000000000011100111111`
-`Thumbnail: 1100100101101001001111000001100000001000000000000000011100111111`
+```
+Original:  1100100101101001001111000001100000001000000000000000011100111111
+Thumbnail: 1100100101101001001111000001100000001000000000000000011100111111
+```
 
 As you can see, both hashes are identical. But this doesn't mean that similar images will always create equal hashes! If we manipulate the original image, and add a watermark, we get these hashes:
 
-`Original:  1100100101101001001111000001100000001000000000000000011100111111`
-`Watermark: 1100100101111001001111000001100000011000000010000000011100111111`
+```
+Original:  1100100101101001001111000001100000001000000000000000011100111111
+Watermark: 1100100101111001001111000001100000011000000010000000011100111111
+```
 
 As you can see, these hashes are very similar, but not equal. To compare these hashes, we count the number of different bits (Hamming distance), which is 3 in this case. The higher this distance, the lower the change of identical or similar images.
 
