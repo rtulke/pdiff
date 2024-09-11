@@ -241,5 +241,17 @@ or
 
 ```
 pdfiff -i /path/to/image-directory 
+```
+
+Try html a report, only similar images
 
 ```
+pdiff -i static/ -s -o html index.html
+```
+
+Absolute ALL
+
+```
+pdiff -i static/ -p90 -t -T -N -H md5 -P -F -S -o html index.html
+```
+
