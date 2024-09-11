@@ -2,6 +2,9 @@
 
 Perceptual Diff `pdiff` is an image comparison utility that makes use of a computational model of the human visual system to compare two images.
 
+![Example](/demo/pdiff_table.png)
+
+
 ## Features
 
  - Comparison of several images
