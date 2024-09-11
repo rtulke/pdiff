@@ -7,7 +7,39 @@ Perceptual Diff `pdiff` is a fast image comparison utility that makes use of a c
 Comparison of the visual perception of images
 
 Perceptual Image Comparisons, refer to methods and techniques for evaluating differences between images based on human visual perception, rather than purely mathematical or pixel-based approaches. This type of comparison focuses on how people perceive differences between images and is 
-particularly useful in areas such as image quality evaluation, image processing
+particularly useful in areas such as image quality evaluation, image processing.
+
+Perception-based hashes are a completely different concept to the usual cryptographic hash methods such as MD5 or SHA. With cryptographic hashes, a one-sided hash value is generated based on the input data. And due to the avalanche effect, the resulting hash changes completely if you change a single bit. For this reason, 2 images can only have the same cryptographic hash if they are exactly the same. This makes cryptographic hashing not a viable solution to this problem.
+
+In contrast, a perceptual hash is an image input-based fingerprint that can be used to compare images by calculating the Hamming distance (which essentially means counting the number of distinct individual bits). There are different algorithms for hashing perceptual images, but they all use similar steps to generate the media fingerprint. The easiest one to explain is the Average Hash (also called aHash). Let's take the following image and see how it works.
+
+1. downsizing
+First, the image is reduced to 8x8 pixels. This is the fastest way to remove high frequencies and details. In this step, the original size and aspect ratio are ignored and always reduced to 8x8 so that we have 64 resulting pixels.
+
+2. reduce the color
+Since we now have 64 pixels with their respective RGB value, we reduce the color by converting the image to grayscale. This leaves 64 color values.
+
+3. calculate the average color
+This is quite self-explanatory: Calculate the average color based on the previous 64 values.
+
+4. calculate the hash value
+The final fingerprint is calculated based on whether a pixel is lighter or darker than the average grayscale value we just calculated. Do this for each pixel and you will get a 64-bit hash.
+
+5. Comparing images
+To detect duplicate or similar images, calculate the perceptual hashes for both images:
+
+`Original:  1100100101101001001111000001100000001000000000000000011100111111`
+`Thumbnail: 1100100101101001001111000001100000001000000000000000011100111111`
+
+As you can see, both hashes are identical. But this doesn't mean that similar images will always create equal hashes! If we manipulate the original image, and add a watermark, we get these hashes:
+
+`Original:  1100100101101001001111000001100000001000000000000000011100111111`
+`Watermark: 1100100101111001001111000001100000011000000010000000011100111111`
+
+As you can see, these hashes are very similar, but not equal. To compare these hashes, we count the number of different bits (Hamming distance), which is 3 in this case. The higher this distance, the lower the change of identical or similar images.
+
+6. Other implementations
+The Average Hash implementation is the easiest and the fastest one, but it appears to be a bit too inaccurate and generates some false positives. Two other implementations are Difference Hash (or dHash) and pHash. Difference Hash follows the same steps as the Average Hash, but generates the fingerprint based on whether the left pixel is brighter than the right one, instead of using a single average value. Compared to Average Hash it generates less false positives, which makes it a great default implementation. pHash is an implementation that is quite different from the other ones, and does some really fancy stuff to increase the accuracy. It resizes to a 32x32 image, gets the Luma (brightness) value of each pixel and applies a discrete cosine transform (DCT) on the matrix. It then takes the top-left 8x8 pixels, which represent the lowest frequencies in the picture, to calculate the resulting hash by comparing each pixel to the median value. Because of it's complexity it is also the slowest one.
 
 ## Possible areas of application for Perceptual Diff
 
