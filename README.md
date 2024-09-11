@@ -85,6 +85,8 @@ Tested with:
 
 ![JSON Report](/demo/json_report.png)
 
+![JSON Report](/demo/csv_report.png)
+
 
 
 ### Supported Images Formats
