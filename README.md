@@ -35,7 +35,7 @@ Tested with:
 
 ## Support
 
-### Supported Output Reports Formats
+### Supported Report Formats
 
 - '.csv', '.json', '.html'
 
