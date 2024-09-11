@@ -196,8 +196,8 @@ options:
   -s, --similar         Only print images with up to 5% difference
   -o OUTPUT OUTPUT, --output OUTPUT OUTPUT
                         Output format and file, e.g., "-o html output.html" or "-o csv output.csv" or "-o json output.json"
-  -T, --time            Display comparison time for each image pair
   -t, --table           Display comparison results as a text table
+  -T, --time            Display comparison time for each image pair
   -N, --id              Add an ID column with a running number
   -H HASH, --hash HASH  Display hash for the specified algorithm (e.g., sha256, md5, etc.)
   -P, --pixel-size      Display image dimensions in pixels (width x height) in the table
