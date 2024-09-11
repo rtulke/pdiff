@@ -5,6 +5,45 @@ Perceptual Diff `pdiff` is a fast image comparison utility that makes use of a c
 ![Example](/demo/pdiff_table.png)
 
 
+Comparison of the visual perception of images
+
+Perceptual Image Comparisons, refer to methods and techniques for evaluating differences between images based on human visual perception, rather than purely mathematical or pixel-based approaches. This type of comparison focuses on how people perceive differences between images and is 
+particularly useful in areas such as image quality evaluation, image processing
+
+## AREAS OF APPLICATION
+
+### Image and Video Compression
+Can be used to assess the effects of various compression techniques on visual quality.
+Algorithms like SSIM help ensure that compressed images or videos remain visually acceptable to the human eye.
+
+### Quality Assurance in Digital Image Processing
+Editing processes can be reviewed to ensure they do not generate unwanted visual artifacts.
+
+### Medical Imaging
+Can help maintain the quality of medical images after compression or transmission, ensuring that critical information is preserved.
+
+### Image and Video Surveillance
+Can be used to assess the effectiveness of video surveillance systems, especially after compression or in poor lighting conditions.
+
+### Benchmarking of Image Processing Algorithms
+Provides a way to benchmark algorithms based on perceived image quality rather than relying solely on numerical performance indicators.
+
+### Scientific Research
+Can be used to conduct experiments aimed at determining perception thresholds and other aspects of visual processing.
+
+### E-Commerce and Online Marketing
+Can also be used to ensure that images on a website still achieve the desired effect after compression, without losing important details.
+
+### Automated Image Enhancement
+Used to determine which improvements actually lead to a perceptible enhancement in image quality.
+
+### Social Media and Image/Video Databases
+Used, for example, to identify people (OSINT).
+It is also employed to detect criminal content, such as pornography or illegal items (weapons, drugs, etc.).
+Blocked images, e.g., for copyright infringement, can be identified.
+Reduction of storage space within a database by recognizing already existing images.
+
+
 ## Features
 
  - Comparison of several images
