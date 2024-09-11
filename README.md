@@ -117,9 +117,9 @@ Tested with:
 - Debian GNU/Linux v12
 
 
-## Support
+## Supported Formats
 
-### Supported Report Formats
+### Report Formats
 
 - '.csv', '.json', '.html'
 
@@ -135,7 +135,7 @@ Tested with:
 
 
 
-### Supported Images Formats
+### Images Formats
 
 - '.jpg', '.jpeg', '.png', '.bmp', '.gif', '.tiff', '.webp', '.ppm']
 
@@ -143,7 +143,7 @@ Extended, but can be changed in pdiff script
 
 - '.PPM', 'pnm', '.ico', '.pdf', '.eps' '.IM', '.DIB', '.MPO', '.tga', '.pcx' ,'.xbm' '.xv'
 
-### Supported Hash Algorithm
+### Hash Algorithm
 
 - 'md5', 'sha1', 'sha224', 'sha256', 'sha384', 'sha512'
 
