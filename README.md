@@ -49,7 +49,11 @@ As you can see, these hashes are very similar, but not equal. To compare these h
 
 **6. Other implementations**
 
-The Average Hash implementation is the easiest and the fastest one, but it appears to be a bit too inaccurate and generates some false positives. Two other implementations are Difference Hash (or dHash) and pHash. Difference Hash follows the same steps as the Average Hash, but generates the fingerprint based on whether the left pixel is brighter than the right one, instead of using a single average value. Compared to Average Hash it generates less false positives, which makes it a great default implementation. pHash is an implementation that is quite different from the other ones, and does some really fancy stuff to increase the accuracy. It resizes to a 32x32 image, gets the Luma (brightness) value of each pixel and applies a discrete cosine transform (DCT) on the matrix. It then takes the top-left 8x8 pixels, which represent the lowest frequencies in the picture, to calculate the resulting hash by comparing each pixel to the median value. Because of it's complexity it is also the slowest one.
+The Average Hash implementation is the easiest and the fastest one, but it appears to be a bit too inaccurate and generates some false positives. Two other implementations are Difference Hash (or dHash) and pHash. Difference Hash follows the same steps as the Average Hash, but generates the fingerprint based on whether the left pixel is brighter than the right one, instead of using a single average value. 
+
+Compared to Average Hash it generates less false positives, which makes it a great default implementation. pHash is an implementation that is quite different from the other ones, and does some really fancy stuff to increase the accuracy. It resizes to a 32x32 image, gets the Luma (brightness) value of each pixel and applies a discrete cosine transform (DCT) on the matrix. 
+
+It then takes the top-left 8x8 pixels, which represent the lowest frequencies in the picture, to calculate the resulting hash by comparing each pixel to the median value. Because of it's complexity it is also the slowest one.
 
 ## Possible areas of application for Perceptual Diff
 
