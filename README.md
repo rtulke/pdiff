@@ -20,6 +20,9 @@ Perceptual Diff `pdiff` is an image comparison utility that makes use of a compu
 - Statistical output for comparisons (performance, number of comparisons, etc.)
 - Support for various hash algorithms (MD5, SHA256, etc.)
 
+### Supported Output Reports Formats
+
+- '.csv', '.json', '.html'
 
 ### Supported Images Formats
 
@@ -28,7 +31,6 @@ Perceptual Diff `pdiff` is an image comparison utility that makes use of a compu
 Extended, but can be changed in pdiff script
 
 - '.PPM', 'pnm', '.ico', '.pdf', '.eps' '.IM', '.DIB', '.MPO', '.tga', '.pcx' ,'.xbm' '.xv'
-
 
 ### Supported Hash Algorithm
 
