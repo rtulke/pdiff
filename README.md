@@ -83,6 +83,10 @@ Tested with:
 
 - '.csv', '.json', '.html'
 
+![JSON Report](/demo/json_report.png)
+
+
+
 ### Supported Images Formats
 
 - '.jpg', '.jpeg', '.png', '.bmp', '.gif', '.tiff', '.webp', '.ppm']
