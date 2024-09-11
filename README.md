@@ -10,6 +10,11 @@ Comparison of the visual perception of images
 Perceptual Image Comparisons, refer to methods and techniques for evaluating differences between images based on human visual perception, rather than purely mathematical or pixel-based approaches. This type of comparison focuses on how people perceive differences between images and is 
 particularly useful in areas such as image quality evaluation, image processing
 
+
+![Example](/demo/html_report.png)
+
+
+
 ## Possible areas of application for Perceptual Diff
 
 ### Image and Video Compression
