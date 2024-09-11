@@ -182,6 +182,28 @@ Now you should be able to execute the command easily.
 
 ```
 pdiff --help
+
+usage: pdiff.py [-h] -i INPUT [INPUT ...] [-p PERCENT] [-s] [-o OUTPUT OUTPUT] [-T] [-t] [-N] [-H HASH] [-P] [-F] [-S]
+
+Compare images in a directory or two specific image files using hashes.
+
+options:
+  -h, --help            show this help message and exit
+  -i INPUT [INPUT ...], --input INPUT [INPUT ...]
+                        Path to a directory or to two image files
+  -p PERCENT, --percent PERCENT
+                        Percentage of maximum deviation that is considered identical (e.g., -p 80 means 20% deviation allowed)
+  -s, --similar         Only print images with up to 5% difference
+  -o OUTPUT OUTPUT, --output OUTPUT OUTPUT
+                        Output format and file, e.g., "-o html output.html" or "-o csv output.csv" or "-o json output.json"
+  -T, --time            Display comparison time for each image pair
+  -t, --table           Display comparison results as a text table
+  -N, --id              Add an ID column with a running number
+  -H HASH, --hash HASH  Display hash for the specified algorithm (e.g., sha256, md5, etc.)
+  -P, --pixel-size      Display image dimensions in pixels (width x height) in the table
+  -F, --file-size       Display file size of images in the table
+  -S, --stats           Display statistics: total time, average time per comparison, and number of comparisons
+
 ``` 
 
 
