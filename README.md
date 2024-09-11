@@ -23,7 +23,7 @@ Perceptual Diff `pdiff` is a fast image comparison utility that makes use of a c
 - Statistical output for comparisons (performance, number of comparisons, etc.)
 - Support for various hash algorithms (MD5, SHA256, etc.)
 
-<h1>160.000</h1>
+## 160.000
 
 With pdiff, up to 160,000 image pairs can be compared in one hour.
 
