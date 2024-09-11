@@ -33,6 +33,7 @@ Tested with:
 - Debian GNU/Linux v12
 
 
+## Support
 
 ### Supported Output Reports Formats
 
