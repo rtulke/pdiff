@@ -4,7 +4,7 @@ Perceptual Diff `pdiff` ist ein schnelles Bildvergleichsprogramm, das ein Comput
 
 ![Example](/demo/pdiff_table.png)
 
-Comparison of the visual perception of images
+Vergleich der visuellen Wahrnehmung von Bildern
 
 Wahrnehmungsbasierte Bildvergleiche beziehen sich auf Methoden und Techniken zur Bewertung von Unterschieden zwischen Bildern auf der Grundlage der menschlichen visuellen Wahrnehmung und nicht auf rein mathematischen oder pixelbasierten Ansätzen. Diese Art des Vergleichs konzentriert sich darauf, wie Menschen Unterschiede zwischen Bildern wahrnehmen und ist 
 besonders nützlich in Bereichen wie der Bewertung der Bildqualität und der Bildverarbeitung.
