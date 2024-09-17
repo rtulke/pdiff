@@ -1,6 +1,6 @@
 # pdiff
 
-Perceptual Diff `pdiff` ist ein schnelles Bildvergleichsprogramm, das ein Computermodell des menschlichen Sehsystems verwendet, um zwei Bilder zu vergleichen.
+Perceptual Diff `pdiff` ist ein schnelles Bildvergleichsprogramm, das ein Computermodell des menschlichen Sehsystems verwendet, um Bilder miteinander zu vergleichen.
 
 ![Example](/demo/pdiff_table.png)
 
