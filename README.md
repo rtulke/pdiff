@@ -1,4 +1,4 @@
-# pdiff
+ä# pdiff
 
 Perceptual Diff `pdiff` is a fast image comparison utility that makes use of a computational model of the human visual system to compare two images.
 
@@ -158,7 +158,7 @@ The parameter -p or --percent specifies the percentage of maximum deviation allo
 
 The maximum difference (max_difference) is calculated using the specified percentage. The maximum Hamming distance for the average_hash is 64 (since the hash is 64 bits long). If, for example, -p 80 is specified, this means that a difference of up to 20% of the maximum value (i.e. up to 12.8) is still considered identical.
 
-When comparing different images, I noticed that images that are very similar usually have a deviation of less than 5%. Therefore I added the parameter -s -simular which only outputs images which have a calculated deviation of 5%. You could also use -p5 to get the same result.
+When comparing different images, I noticed that images that are very similar usually have a deviation of less than 5%. Therefore I added the parameter -s -similar which only outputs images which have a calculated deviation of 5%. You could also use -p5 to get the same result.
 
 ## Pre-Setup
 
